@@ -77,7 +77,7 @@ class SpecialCollection extends SpecialPage {
 					$title = Title::newMainPage();
 				}
 				CollectionSession::enable();
-				$out->redirect( $title->getFullURL() );
+				$out->redirect( $title->getFullURL( 'action=purge' ) );
 				return;
 			case 'stop_book_creator':
 				$title = Title::newFromText( $request->getVal( 'referer', '' ) );
@@ -90,7 +90,7 @@ class SpecialCollection extends SpecialPage {
 					$this->renderStopBookCreatorPage( $title );
 					return;
 				}
-				$out->redirect( $title->getFullURL() );
+				$out->redirect( $title->getFullURL( 'action=purge' ) );
 				return;
 			case 'add_article':
 				if ( CollectionSession::countArticles() >= $wgCollectionMaxArticles ) {
