@@ -62,7 +62,7 @@ $(function() {
 	var mouse_pos = {};
 	var popup_div = null;
 	var addremove_link = null;
-	var visible = false;
+	var visible = true;
 	var show_soon_timeout = null;
 	var get_data_xhr = null;
 	var current_link = null;
