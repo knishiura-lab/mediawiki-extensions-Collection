@@ -163,7 +163,7 @@ $(function() {
 		mouse_pos.x = e.pageX;
 		mouse_pos.y = e.pageY;
 	});
-	setInterval(check_popup_hide, 300);
+	setTimeout(check_popup_hide, 300);
 	createDiv();
 	var prefix = mw.config.get('wgArticlePath').replace(/\$1/, '');
 	$("#bodyContent "
