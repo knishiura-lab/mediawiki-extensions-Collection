@@ -29,7 +29,7 @@ $(function() {
 		$.jStorage.set('collection', collection);
 	}
 
-	window.wfCollectionSave = save_collection;
+	document.wfCollectionSave = save_collection;
 
 	function refreshBookCreatorBox(hint, oldid) {
 		$.getJSON(script_url, {
@@ -57,7 +57,7 @@ $(function() {
 		}, 'json');
 	}
 
-	window.collectionCall = collectionCall; // public
+	document.collectionCall = collectionCall; // public
 
 	var mouse_pos = {};
 	var popup_div = null;
