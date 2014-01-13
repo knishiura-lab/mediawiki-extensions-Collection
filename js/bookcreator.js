@@ -23,7 +23,7 @@
 
 $(function() {
 
-	var script_url = mw.util.wikiScript();
+	var script_url = mw.util.wikiScript;
 
 	function save_collection(collection) {
 		$.jStorage.set('collection', collection);
