@@ -166,7 +166,7 @@ $(function() {
 	setInterval(check_popup_hide, 300);
 	createDiv();
 	var prefix = mw.config.get('wgArticlePath').replace(/\$1/, '');
-	$("#bodyContent "
+	$("bodyContent "
 		+ "a[href^='" + prefix + "']" // URL starts with prefix of wgArticlePath
 		+ ":not(a[href~='index.php'])" // URL doesn't contain index.php (simplification!)
 		+ "[title!=]" // title attribute is not empty
