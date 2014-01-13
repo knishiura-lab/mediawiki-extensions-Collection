@@ -102,7 +102,7 @@ $(function() {
 			get_data_xhr = $.post(script_url, {
 				'action': 'ajax',
 				'rs': 'wfAjaxCollectionGetPopupData',
-				'rsargs[]': [title]
+				'args': [title]
 			}, function(result) {
 				visible = true;
 				var img = $('<img />').attr({src: result.img, alt: ''});
