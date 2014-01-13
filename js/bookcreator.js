@@ -180,14 +180,13 @@ $(function() {
 		if (this.onmousedown) {
 			return;
 		}
-		var $this = $(this);
-		if (!$this.attr('title') || $this.attr('title').indexOf(':') != -1) { // title doesn't contain ":" (simplification!)
+		if (!this.attr('title') || this.attr('title').indexOf(':') != -1) { // title doesn't contain ":" (simplification!)
 			return;
 		}
-		if ($this.parents('.nopopups').length) {
+		if (this.parents('.nopopups').length) {
 			return;
 		}
-		$this.hover(function() { show($this); }, cancel);
+		this.hover(function() { show($this); }, cancel);
 	});
 });
 
