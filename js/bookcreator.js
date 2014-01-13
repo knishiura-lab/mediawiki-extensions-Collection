@@ -184,7 +184,7 @@ $(function() {
 		if (!$this.attr('title') || $this.attr('title').indexOf(':') != -1) { // title doesn't contain ":" (simplification!)
 			return;
 		}
-		if ($this.parents('.nopopups').length) {
+		if ($this.parent('.nopopups').length) {
 			return;
 		}
 		$this.hover(function() { show($this); }, cancel);
