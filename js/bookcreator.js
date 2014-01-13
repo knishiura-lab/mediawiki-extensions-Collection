@@ -71,7 +71,7 @@ $(function() {
 	function createDiv() {
 		addremove_link = $('<a href="javascript:void(0)" />');
 		popup_div = $('<div id="collectionpopup" />');
-		popup_div.append(addremove_link);
+		addremove_link.append(popup_div);
 		$('body').append(popup_div);
 		popup_div.hide();
 	}
