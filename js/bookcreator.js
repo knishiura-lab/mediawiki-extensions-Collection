@@ -32,7 +32,7 @@ $(function() {
 	window.wfCollectionSave = save_collection;
 
 	function refreshBookCreatorBox(hint, oldid) {
-		$.getJSON(script_url, {
+		$.getJson(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
 			'rsargs[]': [hint, oldid, mw.config.get('wgPageName')]
