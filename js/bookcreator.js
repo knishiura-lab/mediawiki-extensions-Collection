@@ -153,7 +153,7 @@ $(function() {
 			return;
 		}
 		var pos = popup_div.offset();
-		if (!is_inside(mouse_pos.x, mouse_pos.y,
+		if (is_inside(mouse_pos.x, mouse_pos.y,
 							 pos.left, pos.top, popup_div.width(), popup_div.height())) {
 			hide();
 		}
