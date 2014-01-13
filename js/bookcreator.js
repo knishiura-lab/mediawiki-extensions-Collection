@@ -73,7 +73,7 @@ $(function() {
 		popup_div = $('<div id="collectionpopup" />');
 		popup_div.append(addremove_link);
 		$('body').append(popup_div);
-		popup_div.hide();
+		popup_div.hide;
 	}
 
 	function addremove_article(action, title) {
