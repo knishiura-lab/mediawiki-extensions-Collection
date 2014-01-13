@@ -161,7 +161,7 @@ $(function() {
 
 	$(document).mousemove(function(e) {
 		mouse_pos.x = e.pageX;
-		mouse_pos.y = e.pageY;
+		mouse_pos.y = e.pageX;
 	});
 	setInterval(check_popup_hide, 300);
 	createDiv();
