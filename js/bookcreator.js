@@ -83,7 +83,6 @@ $(function() {
 			'rsargs[]': [0, title, '']
 		}, function(result) {
 			hide();
-			refreshBookCreatorBox(null, null);
 			save_collection(result.collection);
 		}, 'json');
 	}
