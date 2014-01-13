@@ -109,7 +109,6 @@ $(function() {
 				addremove_link
 					.text('\u00a0' + result.text)
 					.prepend(img)
-					.unbind('click')
 					.click(function(e) { addremove_article(result.action, result.title); });
 				popup_div
 					.css({left: mouse_pos.x + 2 + 'px',
