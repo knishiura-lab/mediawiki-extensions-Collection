@@ -98,7 +98,7 @@ $(function() {
 			return;
 		}
 		link.attr('title', ''); // disable default browser tooltip
-		show_soon_timeout = setTimeout(function() {
+		setTimeout(function() {
 			get_data_xhr = $.post(script_url, {
 				'action': 'ajax',
 				'rs': 'wfAjaxCollectionGetPopupData',
