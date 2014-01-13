@@ -76,7 +76,7 @@ $(function() {
 		popup_div.hide();
 	}
 
-	function addremove_article(action, title) {
+	function addremovearticle(action, title) {
 		$.post(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollection' + action.charAt(0).toUpperCase() + action.slice(1) + 'Article',
