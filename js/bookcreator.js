@@ -21,8 +21,6 @@
 
 (function($) {
 
-$(function() {
-
 	var script_url = mw.util.wikiScript();
 
 	function save_collection(collection) {
@@ -80,7 +78,7 @@ $(function() {
 		$.post(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollection' + action.charAt(0).toUpperCase() + action.slice(1) + 'Article',
-			'rsargs[]': [0, title, '']
+			'rsargs': [0, title, '']
 		}, function(result) {
 			hide();
 			refreshBookCreatorBox(null, null);
@@ -189,6 +187,5 @@ $(function() {
 		}
 		$this.hover(function() { show($this); }, cancel);
 	});
-});
 
 })(jQuery);
