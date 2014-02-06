@@ -93,7 +93,7 @@ $(function() {
 			return;
 		}
 		current_link = link;
-		title = link.attr('title');
+		var title = link.attr('title');
 		if (!title){
 			return;
 		}
