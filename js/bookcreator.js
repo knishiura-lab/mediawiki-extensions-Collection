@@ -50,7 +50,7 @@ $(function() {
 		}, function(result) {
 			var oldid = null;
 			if (args.length == 3) {
-				oldid = args[2];
+				oldid = args[3];
 			}
 			refreshBookCreatorBox(hint, oldid);
 			save_collection(result.collection);
