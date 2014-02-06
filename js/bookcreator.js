@@ -135,7 +135,7 @@ $(function() {
 
 	function hide() {
 		cancel();
-		if (!visible) {
+		if (visible) {
 			return;
 		}
 		visible = false;
