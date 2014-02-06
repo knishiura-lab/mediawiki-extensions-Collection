@@ -52,7 +52,7 @@ $(function() {
 			if (args.length == 3) {
 				oldid = args[2];
 			}
-			refreshBookCreatorBox(hint, oldid);
+			refreshBookCreatorBox(null, null);
 			save_collection(result.collection);
 		}, 'json');
 	}
@@ -190,5 +190,4 @@ $(function() {
 		$this.hover(function() { show($this); }, cancel);
 	});
 });
-
 })(jQuery);
