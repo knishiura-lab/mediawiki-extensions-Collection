@@ -57,7 +57,7 @@ $(function() {
 		}, 'json');
 	}
 
-	window.collectionCall = collectionCall; // public
+	window.collcationCall = collectionCall; // public
 
 	var mouse_pos = {};
 	var popup_div = null;
