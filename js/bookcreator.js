@@ -120,7 +120,7 @@ $(function() {
 	}
 
 	function cancel() {
-		if (current_link && title) {
+		if (current_link || title) {
 			current_link.attr('title', title);
 		}
 		if (show_soon_timeout) {
