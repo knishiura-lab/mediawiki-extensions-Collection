@@ -59,7 +59,7 @@ $(function() {
 
 	window.collectionCall = collectionCall; // public
 
-	var mouse_pos = {};
+	var mouse_pos = null;
 	var popup_div = null;
 	var addremove_link = null;
 	var visible = false;
