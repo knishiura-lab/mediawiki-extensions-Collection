@@ -173,7 +173,6 @@ $(function() {
 		+ "[rel!=nofollow]"
 		+ ":not(.external)"
 		+ ":not(.internal)"
-		+ ":not(.sortheader)"
 		+ ":not([accesskey])"
 		+ ":not(.nopopup)"
 	).each(function(i, link) {
