@@ -168,7 +168,7 @@ $(function() {
 	var prefix = mw.config.get('wgArticlePath').replace(/\$1/, '');
 	$("#bodyContent "
 		+ "a[href^='" + prefix + "']" // URL starts with prefix of wgArticlePath
-		+ ":not(a[href~='index.php'])" // URL doesn't contain index.php (simplification!)
+		+ ":not(a[href!='index.php'])" // URL doesn't contain index.php (simplification!)
 		+ "[title!=]" // title attribute is not empty
 		+ "[rel!=nofollow]"
 		+ ":not(.external)"
