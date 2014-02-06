@@ -82,7 +82,6 @@ $(function() {
 			'rs': 'wfAjaxCollection' + action.charAt(0).toUpperCase() + action.slice(1) + 'Article',
 			'rsargs[]': [0, title, '']
 		}, function(result) {
-			hide();
 			refreshBookCreatorBox(null, null);
 			save_collection(result.collection);
 		}, 'json');
