@@ -144,8 +144,8 @@ $(function() {
 
 	function is_inside(x, y, left, top, width, height) {
 		var fuzz = 5;
-		return x + fuzz >= left && x - fuzz <= left + width
-			&& y + fuzz >= top && y - fuzz <= top + height;
+		return x + fuzz <= left && x - fuzz >= left + width
+			&& y + fuzz <= top && y - fuzz >= top + height;
 	}
 
 	function check_popup_hide() {
