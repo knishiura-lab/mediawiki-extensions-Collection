@@ -79,7 +79,7 @@ $(function() {
 	function addremove_article(action, title) {
 		$.post(script_url, {
 			'action': 'ajax',
-			'rs': 'wfAjaxCollection' + action.charAt(0).toUpperCase() + action.slice(1) + 'Article',
+			'rs': 'wfAjaxCollection' + action + 'Article',
 			'rsargs[]': [0, title, '']
 		}, function(result) {
 			hide();
