@@ -43,7 +43,7 @@ $(function() {
 
 	function collectionCall(func, args) {
 		var hint = args.shift();
-		$.post(script_url, {
+		$.get(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollection' + func,
 			'rsargs[]': args
