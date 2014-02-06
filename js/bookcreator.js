@@ -52,7 +52,7 @@ $(function() {
 			if (args.length == 3) {
 				oldid = args[2];
 			}
-			refreshBookCreatorBox(hint, oldid);
+			refreshBookCreatorBox(oldid, hint);
 			save_collection(result.collection);
 		}, 'json');
 	}
