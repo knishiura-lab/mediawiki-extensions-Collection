@@ -32,13 +32,13 @@ $(function() {
 	window.wfCollectionSave = save_collection;
 
 	function refreshBookCreatorBox(hint, oldid) {
-		$.getJSON(script_url, {
+		$.post(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
 			'rsargs[]': [hint, oldid, mw.config.get('wgPageName')]
 		}, function(result) {
 			$('#coll-book_creator_box').html(result.html);
-		});
+		}, 'json');
 	}
 
 	function collectionCall(func, args) {
