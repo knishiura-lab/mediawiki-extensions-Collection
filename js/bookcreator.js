@@ -128,8 +128,8 @@ $(function() {
 			show_soon_timeout = null;
 		}
 		if (get_data_xhr) {
-			get_data_xhr.abort();
 			get_data_xhr = null;
+			get_data_xhr.abort();
 		}
 	}
 
